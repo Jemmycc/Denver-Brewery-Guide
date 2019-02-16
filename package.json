@@ -1,0 +1,29 @@
+{
+  "name": "brewery",
+  "version": "1.0.0",
+  "description": "The app allows a user to scrape data for Denver's 200+ breweries and keep notes for any saved breweries.",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.11",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jemmycc/Denver-Brewery-Guide.git"
+  },
+  "author": "Miya Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jemmycc/Denver-Brewery-Guide/issues"
+  },
+  "homepage": "https://github.com/Jemmycc/Denver-Brewery-Guide#readme"
+}
