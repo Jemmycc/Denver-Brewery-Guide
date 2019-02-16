@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand" rel="stylesheet">
+
+    <!-- Fonts Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <script src='https://code.jquery.com/jquery.js'></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+    <title>:::..Denver Brewery Guide..::</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="top">
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 title">
+                    <div class="main-title">
+                        <div class="main-one">DENVER</div>
+                        <div class="main-two">BREWERY</div>
+                        <div class="main-three"> GUIDE</div>
+                    </div>
+                    <div class="sub-title">Your Resource for Breweries in Denver</div>
+                    <div id="home-btn" class="main-btn" onClick="document.getElementById('middle').scrollIntoView();">
+                        HOME</div>
+                    <div id="saved-btn" class="main-btn" onClick="document.getElementById('middle').scrollIntoView();">
+                        SAVED BREWERIES</div><br>
+                    <div id="scrape-btn" onClick="document.getElementById('middle').scrollIntoView();">SCRAPE
+                        NEW BREWERIES</div>
+                    <div id="clear-btn">CLEAR BREWERIES!</div>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <div id="middle">
+            <div class="row result">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10">
+                    <div class="breweries-scraped">
+                        <!-- Results from DB here -->
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+                                <button type="button" id="closeModal" class="close" data-dismiss="modal" align="right">
+                                    &times;</button>
+                                <div class="modal-header">
+
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" placeholder="Give your Note A Title" id="titleinput"></input>
+                                    <textarea type="text" placeholder="Enter a Note" id="bodyinput"></textarea>
+                                </div>
+                                <div class="modal-btn-area">
+                                    <button type="button" class="btn-savenote" id="savenote" data-dismiss="modal"
+                                        style="float: right;">SAVE
+                                    </button>
+                                    <button type="button" class="btn-delete" id="deletenote" data-dismiss="modal">DELETE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   padding: 0;
+   margin: 0;
+   height: 100%;   
+  
+   background-color:  rgb(78, 72, 64);
+}
+
+#top{
+    height: auto;  
+}
+#middle {
+    height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container-fluid {
+    background-image: url("./img/01.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.title {
+    margin-top: 300px;
+    text-align: center;
+}
+.main-title {
+    border: 9px solid rgb(243, 234, 151);
+    padding: 20px 6px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(36, 36, 36);
+    margin:-50px auto 0 auto;
+    width: 650px;
+    height: 360px;
+    background-color: rgba(224, 220, 209, 0.5);
+}
+.main-one {
+    font-size: 72px;
+    letter-spacing: 42px;
+    line-height: 100px;
+    padding-left: 39px;
+}
+.main-two {
+    font-size: 100px;
+    letter-spacing: 5px;
+    line-height: 135px;
+}
+.main-three {
+    font-size: 35px;
+    letter-spacing: 95px;
+    font-weight: 999;
+    padding-left: 70px;
+}
+.sub-title {
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    letter-spacing: 1.6px;
+}
+
+.main-btn {
+    margin: 30px 30px 3px 30px;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(243, 234, 151);
+    border-bottom: 3px solid rgb(243, 234, 151);
+    font-weight: 999;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.main-btn:hover {
+    color: rgb(240, 62, 17);
+    border-bottom: 3px solid rgb(240, 62, 17);
+}
+
+#scrape-btn {
+    margin: 30px 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: rgba(238, 234, 232, 0.808);
+    width: 275px;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#scrape-btn:hover {
+    background-color: rgba(182, 174, 171, 0.5);
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+#clear-btn {
+    margin: 30px 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: rgba(238, 234, 232, 0.808);
+    width: 215px;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#clear-btn:hover {
+    background-color: rgba(182, 174, 171, 0.5);
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+.breweries-scraped {
+    margin-top: 200px;
+    z-index: 3;
+    position: absolute;
+    background-color: rgba(182, 174, 171, 0.5);
+}
+
+.card {
+    margin: 50px;
+    background-color: rgb(219, 215, 213);
+}
+
+.beer-title {
+    font-size: 28px;
+    letter-spacing: 1.8px;
+    padding: 20px 10px 10px 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.beer-text {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    padding: 5px 20px;
+}
+
+.beer-link {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.save-btn {
+    width: 120px;
+    margin-left: 600px;  
+    margin-bottom: 20px; 
+    border: 0px;
+    background-color: rgb(243, 222, 151);
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: rgb(93, 76, 62);
+    color: #fff;
+}  
+
+.unsave-btn {
+    width: 180px;
+    margin-left: 600px;  
+    margin-bottom: 20px; 
+    border: 0px;
+    background-color: rgb(246, 138, 88);
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 999;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.unsave-btn:hover {
+    background-color: rgb(189, 182, 178);
+    color: #fff;
+}  
+
+.note-btn {
+    width: 180px;
+    margin-left: 600px;  
+    margin-bottom: 20px; 
+    border: 0px;
+    background-color: rgb(246, 138, 88);
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 999;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.note-btn:hover {
+    background-color: rgb(189, 182, 178);
+    color: #fff;
+}  
+
+/*modal*/
+.modal-content {
+    height: 520px;
+    opacity: .9;
+    background-color: rgb(250, 248, 248);
+}
+
+#close-modal-btn {
+    margin-right: 20px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#closeModal {
+    text-align: right;
+    font-size: 22px;
+    right: 0;
+}
+
+.btn-delete {
+    background-color: rgb(93, 76, 62);
+    color: #fff;
+    border: 0px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-delete:hover { 
+    background-color: rgb(243, 222, 151);
+    color: rgb(93, 76, 62);
+}
+
+.btn-savenote {
+    margin-right: 30px;
+    /* margin-left: 200px; */
+    border: 0px;
+    width: 100px;
+    border: 0px;
+    background-color: rgb(93, 76, 62);
+    color: #fff;
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-savenote:hover {
+    background-color: rgb(243, 222, 151);
+    color: rgb(93, 76, 62);
+}
+
+.modal-btn-area {
+    display: inline-flex;
+    margin: auto;
+}
+
+#bodyinput {
+    height: 200px;
+}
